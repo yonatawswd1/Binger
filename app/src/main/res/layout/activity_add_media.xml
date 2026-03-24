@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="הוסף סדרה"
+        android:textColor="#BB86FC"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/nestedLV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ET_Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_bg"
+            android:gravity="center_vertical"
+            android:hint="שם הסדרה"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA" />
+
+        <EditText
+            android:id="@+id/ET_Category"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_bg"
+            android:gravity="center_vertical"
+            android:hint="קטגוריה"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA" />
+
+        <ImageView
+            android:id="@+id/iv_media_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_bg"
+            android:src="@android:drawable/ic_menu_camera"
+            android:scaleType="center"
+            ></ImageView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:text="שמור"
+        android:textSize="20sp"
+        android:backgroundTint="#BB86FC"
+        android:textColor="#000000"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"/>
+
+</LinearLayout>
