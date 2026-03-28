@@ -63,6 +63,9 @@ public class MainPageActivity extends AppCompatActivity {
 
 
     public void addCard(String name, String category, String imageUri) {
+        TextView empty_text = findViewById(R.id.empty_text);
+        empty_text.setVisibility(View.GONE);
+
         LinearLayout container = findViewById(R.id.view_contain_media);
 
         LinearLayout card = new LinearLayout(this);

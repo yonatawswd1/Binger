@@ -9,33 +9,165 @@
     tools:context=".MainPageActivity"
     android:background="#121212">
 
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Binger"
+        android:textColor="#BA54D7"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"></TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   סדרות מומלצות"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/trending_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="#2C2C2C"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/show1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Breaking Bad"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="#2C2C2C"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/show2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Rick And Morty"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="#2C2C2C"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/show3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Invincible"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="#2C2C2C"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/show4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Dexter Ressurection"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="הסדרות שלי"
-        android:textColor="#BB86FC"
-        android:textSize="30dp"
+        android:textColor="#FFFF"
+        android:textSize="20dp"
         android:fontFamily="sans-serif-medium"
         android:textAlignment="center"
         android:layout_marginTop="20dp"></TextView>
+
 
     <ScrollView
         android:layout_gravity="center"
         android:layout_width="380dp"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
 
-        <!-- for displaying show cards/movies -->
         <LinearLayout
             android:id="@+id/view_contain_media"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-
-
-
-
+            <TextView
+                android:id="@+id/empty_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="עדיין אין סדרות ברשימה..."
+                android:textColor="#757575"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:textSize="18sp" />
 
         </LinearLayout>
     </ScrollView>
