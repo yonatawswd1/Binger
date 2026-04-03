@@ -70,7 +70,7 @@ public class AddMediaActivity extends AppCompatActivity {
                     Intent resultIntent = new Intent();
                     resultIntent.putExtra("NAME", name);
                     resultIntent.putExtra("CATEGORY", category);
-                    if (selectedImageUri != null) { //make sure it has data
+                    if (selectedImageUri != null) {
                         resultIntent.putExtra("IMAGE", selectedImageUri.toString());
                     }
                     setResult(RESULT_OK, resultIntent);

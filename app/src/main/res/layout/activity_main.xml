@@ -10,18 +10,6 @@
     android:background="#121212">
 
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Binger"
-        android:textColor="#BA54D7"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"></TextView>
-
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +17,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="65dp" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
